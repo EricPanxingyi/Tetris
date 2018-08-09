@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tetris</title>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<div class="toStart" id="start">
+		<span class="title">Tetris</span>
+		<button class="startBtn" id="toStart">Start Game</button>
+		<span class="sign">By: Eric Pan</span>
+	</div>
+	<div class="main" id="main">
+		<div class="game" id="game"></div>
+		<div class="right" id="right">
+			<div class="next" id="next"></div>
+			<div class="info">
+				<div>Time：<span id="time">0</span>s</div>
+				<div>Level：<span id="level">1</span></div>
+				<div>Line：<span id="line">0</span></div>
+				<div>Score：<span id="score">0</span></div>
+				<div id="gameover"></div>
+			</div>
+			<a href="javascript:void(0)" class="resetNot" id="reset1"><span class="resetGame">Reset Game</span></a>
+			<a href="javascript:void(0)" class="reset" id="reset2"><span class="resetGame">Reset Game</span></a>
+		</div>
+		
+		<div class="surprise">
+			<div class="animated">
+				<div id="cut-diamond"></div>
+			</div>
+			<div id="circle"></div>
+		</div>
+	</div>
+</body>
+<script src="js/square.js"></script>
+<script src="js/squareFactory.js"></script>
+<script src="js/game.js"></script>
+<script src="js/local.js"></script>
+<script src="js/remote.js"></script>
+<script src="js/script.js"></script>
+</html>

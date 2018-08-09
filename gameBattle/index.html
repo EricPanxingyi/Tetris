@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tetris Battle</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/spinner.css">
+
+</head>
+<body>
+	<div class="toStart" id="start">
+		<span class="title">Tetris Battle</span>
+		<button class="startBtn" id="toStart">Start Game</button>
+		<span class="sign">By: Eric Pan</span>
+	</div>
+	<div class="waiting" id="waiting">
+		<div class="load-container load4">
+			<div class="loader">Loading...</div>
+			<span id="waiting_message"></span>
+		</div>
+	</div>
+	<div class="countdown" id="countdown"><span id="countdownnum"></span></div>
+	<div class="main" id="main">
+		<div class="local_title">My Area</div>
+		<div class="game" id="game"></div>
+		<div class="right" id="right">
+			<div class="next" id="next"></div>
+			<div class="info">
+				<div>Time：<span id="time">0</span>s</div>
+				<div>Level：<span id="level">1</span></div>
+				<div>Line：<span id="line">0</span></div>
+				<div>Score：<span id="score">0</span></div>
+				<div id="gameover"></div>
+			</div>
+			<!-- <a href="javascript:void(0)" class="resetNot" id="reset1"><span class="resetGame">Reset Game</span></a>
+			<a href="javascript:void(0)" class="reset" id="reset2"><span class="resetGame">Reset Game</span></a> -->
+		</div>
+	</div>
+	<div class="main2" id="remote">
+		<div class="local_title">Opponent Area</div>
+		<div class="game" id="remote_game"></div>
+		<div class="right" id="remote_right">
+			<div class="next" id="remote_next"></div>
+			<div class="info">
+				<div>Time：<span id="remote_time">0</span>s</div>
+				<div>Level：<span id="remote_level">1</span></div>
+				<div>Line：<span id="remote_line">0</span></div>
+				<div>Score：<span id="remote_score">0</span></div>
+				<div id="remote_gameover"></div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="socketio-2.0.3.js"></script>
+<script src="js/square.js"></script>
+<script src="js/squareFactory.js"></script>
+<script src="js/game.js"></script>
+<script src="js/local.js"></script>
+<script src="js/remote.js"></script>
+<script src="js/script.js"></script>
+</html>
